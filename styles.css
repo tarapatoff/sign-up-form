@@ -110,6 +110,8 @@ fieldset > p {
 
 label {
     letter-spacing: 2px;
+    margin-bottom: 4px;
+    font-size: 0.8rem;
 }
 
 .btn-section {
