@@ -1,0 +1,191 @@
+@font-face { 
+    font-family: odin-font;
+    src: url(/Norse-Bold.otf);
+}
+
+:root {
+    --main-color:  ;
+    --input-border: #E5E7EB;
+    --main-font-size: calc(16px + 1vw);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ЛІВА СТОРОНА */
+.left-banner {
+    display: flex;
+    flex-direction: column;
+    background-image: url(leaf.png);
+    background-size: cover;
+    background-position: 70% center ;
+    width: 50%;
+    color:white;
+}
+
+#odin_s {
+    font-family: odin-font, sans-serif;
+    font-size: 6em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.odin-container {
+    margin-top: 225px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    padding: 15px;
+    font-weight: 100;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-banner > p {
+    margin-top: auto;
+    padding-bottom: 10px;
+    font-size: 12px;
+    align-self: center;
+}
+
+/* ПРАВА СТОРОНА */
+.right-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(250, 253, 253);
+}
+
+.intro-section {
+    height: 33.33%;
+    margin-top: 100px;
+    display: flex;
+    font-size: 1.75rem;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content > .special {
+    padding-top: 40px;
+}
+
+.form-section {
+    height: 33.33%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.26); 
+    box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.09);
+    padding-left: 50px;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 1.75rem;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+fieldset {
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+    margin-bottom: 50px;
+    max-width: 800px;
+}
+
+fieldset > p {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    letter-spacing: 2px;
+}
+
+.btn-section {
+    height: 33.33%;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    margin-top: 35px;
+}
+ 
+a:link,
+a:visited {
+    color: white;
+}
+
+span {
+    font-style: italic;
+}
+
+.login-link:link, .login-link:visited {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;
+    line-height: 1.75rem;
+    padding: 2px 8px;
+    font-size: 1rem;
+}
+
+input:invalid {
+    border: 1px solid red;
+    outline: 0;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    -webkit-box-shadow: 2px 4px 14px 0px rgba(89,109,72,0.38); 
+    box-shadow: 2px 3px 14px 0px rgba(89,109,72,0.38);
+}
+
+button {
+    background-color: #596D48;
+    border: 0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 6px 20px 4px rgba(89,109,72,0.26); 
+    box-shadow: 0px 6px 20px 4px rgba(89,109,72,0.26);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 55px;
+    line-height: 2.2;
+    outline: transparent;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 280px;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.section-content {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    padding-left: 50px;
+}

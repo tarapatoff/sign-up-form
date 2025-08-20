@@ -7,6 +7,65 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="left-banner">
+            <div class="odin-container">
+                <img src="odin-lined.png" alt="The logo of Odin Project" style="width: auto; height: 125px;">
+                <p id="odin_s">Odin</p>
+            </div>
+            <p>Photo by <a href="">Halie West</a> on <a href="">Unplash</a></p>
+        </div>
+
+
+
+        <div class="right-container">
+            <div class="intro-section">
+                <div class="section-content">
+                    <p>This is not a real online service! You know you need something like this in your real life to help you realize your deepest dreams. <br>
+                        Sign up <span>now</span> to get started.</p>
+                    <p class="special">You <span>know</span> you want to.</p>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <form action="https://httpbin.org/post" method="post">
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+                        <p>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </p>
+                        <p>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </p>
+                        <p>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+                        <p>
+                            <label for="phone_numb">PHONE NUMBER</label>
+                            <input type="tel" name="phone_numb" id="phone_numb">
+                        </p>
+                        <p>
+                            <label for="pswrd">PASSWORD</label>
+                            <input type="password" name="password" id="pswrd">
+                        </p>
+                        <p>
+                            <label for="pswrd_conf">CONFIRM PASSWORD</label>
+                            <input type="password" name="password_confimation" id="pswrd_conf">
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="btn-section">
+                <div class="section-content">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="" class="login-link">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
